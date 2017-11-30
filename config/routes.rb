@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :autors
+  #get 'articulos/new'
+  #get 'articulos/index'
+  root "home#index"
+
+  resources :articulos
+
   get 'estaticas/home'
 
   get 'estaticas/index'
